@@ -1,0 +1,66 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+!dist
+!dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Source and development directories
+/src/
+/tests/
+/__tests__/
+/specs/
+/examples/
+
+# Toolchain config files
+.eslintrc.js
+eslint.config.*
+.prettierrc
+prettier.config.*
+.babelrc
+.editorconfig
+tsconfig.json
+tsconfig.*.json
+jest.config.*
+webpack.config.*
+vite.config.*
+
+# Document files
+!/docs/
+!*.md
+.github/
+.DS_Store
+.vscode/
+.idea/
+
+# Git files
+/.github/
+/.gitlab-ci.yml
+/.circleci/
+/.travis.yml
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Pack file
+*.tgz

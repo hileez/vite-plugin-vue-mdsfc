@@ -1,0 +1,64 @@
+{
+  "name": "vite-plugin-vue-mdsfc",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "build-lib": "vite build",
+    "build-dts": "tsc -p tsconfig.dts.json",
+    "build": "npm run build-lib && npm run build-dts",
+    "pack": "npm run build && npm pack",
+    "eslint": "npx eslint src/",
+    "eslint-fix": "npx eslint src/ --fix"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "vue markdown",
+    "vue md",
+    "markdown to vue",
+    "markdown to sfc",
+    "markdown to vue sfc",
+    "vite-plugin",
+    "vue use .md",
+    "vue import .md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hileez/vite-plugin-vue-mdsfc.git"
+  },
+  "homepage": "https://github.com/hileez/vite-plugin-vue-mdsfc",
+  "author": "hileez",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.5.0",
+    "prettier": "^3.7.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.49.0",
+    "highlight.js": "^11.11.1",
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0"
+  },
+  "peerDependencies": {
+    "highlight.js": "^11.11.1"
+  }
+}
